@@ -1,0 +1,45 @@
+.page {
+  .masthead {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+
+    .masthead-name {
+      font-size: 40px;
+      color: #000;
+      text-decoration: none;
+
+    }
+    .main-nav {
+      float: right;
+
+      li {
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      li:before {
+        content: "|";
+        padding-right: 10px;
+      }
+      li:nth-child(1):before {
+        content: "";
+        padding: 0;
+      }
+    }
+  }
+  footer,.content {
+    text-align: center;
+  }
+  main{
+    padding: 0 100px;
+    .home-content{
+      img{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.clearfix::after {
+  clear: both;
+}
