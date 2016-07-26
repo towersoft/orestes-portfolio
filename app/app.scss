@@ -1,11 +1,12 @@
+$black-color:#000;
 .page {
   .masthead {
     margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $black-color;
 
     .masthead-name {
       font-size: 40px;
-      color: #000;
+      color: $black-color;
       text-decoration: none;
 
     }
@@ -19,7 +20,7 @@
 
       li:before {
         content: "|";
-        padding-right: 10px;
+        padding: 0 10px;
       }
       li:nth-child(1):before {
         content: "";
@@ -27,15 +28,27 @@
       }
     }
   }
-  footer,.content {
+  footer, .content {
     text-align: center;
   }
-  main{
+  main {
     padding: 0 100px;
-    .home-content{
-      img{
+    .profession {
+      font-weight: bold;
+    }
+    h2.title{
+      margin:0 0 20px ;
+    }
+    .home-content {
+      img {
         margin-bottom: 20px;
       }
+    }
+    .projects{
+      li{
+        display: block;
+      }
+
     }
   }
 }

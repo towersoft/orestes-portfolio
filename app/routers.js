@@ -1,16 +1,22 @@
 'use strict';
-angular.module('portfolio',['ngRoute']).
+angular.module('portfolio', ['ngRoute']).
 config(config);
-  function config($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+function config($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('!');
 
     $routeProvider.
     when('/home', {
-      template: '<home></home>'
+        template: '<home></home>'
     }).
     when('/projects', {
-      template: '<projects-list></projects-list>'
+        template: '<projects-list></projects-list>'
     }).
-    otherwise('/home');
+    when('/skills', {
+        template: '<skills-list></skills-list>'
+    }).
+    when('/contact', {
+        template: '<contact></contact>'
+    }).
+    otherwise('/projects');
 
 }
