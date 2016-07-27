@@ -1,5 +1,5 @@
 'use strict';
-angular.module('portfolio', ['ngRoute']).
+angular.module('portfolio').
 config(config);
 function config($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
@@ -17,6 +17,6 @@ function config($locationProvider, $routeProvider) {
     when('/contact', {
         template: '<contact></contact>'
     }).
-    otherwise('/projects');
+    otherwise('/home');
 
 }
