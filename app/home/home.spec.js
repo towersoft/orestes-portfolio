@@ -10,6 +10,6 @@ describe('Component: home', function() {
     }));
 
         it('should set a default value for the `title` property', function() {
-            expect(ctrl).toBeDefined();
+            expect(ctrl.title).toBe('Home');
         });
 });
