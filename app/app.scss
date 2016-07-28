@@ -1,10 +1,23 @@
-$black-color:#000;
+$black-color: #000;
+.desc-font {
+  font-family: "Helvetica Neue,Helvetica,Arial";
+}
+
+.sub-head-font {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.no-background {
+  color: #000;
+  background-image: none;
+}
 .page {
   .masthead {
     margin-bottom: 20px;
     border-bottom: 1px solid $black-color;
 
     .masthead-name {
+      @extend .sub-head-font;
       font-size: 40px;
       color: $black-color;
       text-decoration: none;
@@ -36,19 +49,49 @@ $black-color:#000;
     .profession {
       font-weight: bold;
     }
-    h2.title{
-      margin:0 0 20px ;
+    h2.title {
+      margin: 0 0 20px;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
     }
     .home-content {
       img {
         margin-bottom: 20px;
       }
+      .profile-desc {
+        @extend .desc-font;
+        font-size: 20px;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h4 {
+        @extend .sub-head-font;
+        font-size: 26px;
+        padding-bottom: 20px;
+      }
     }
-    .projects{
-      li{
+    .projects {
+      color: #000;
+      li {
         display: block;
       }
+      li p {
+        @extend .desc-font;
+        font-size: 18px;
+      }
+      li h4 {
+        @extend .sub-head-font;
+        font-size: 20px;
 
+      }
+      ul {
+        padding-left: 0;
+      }
+    }
+    .contact {
+      @extend .no-background;
     }
   }
 }
