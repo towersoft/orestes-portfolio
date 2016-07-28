@@ -1,10 +1,11 @@
 'use strict';
 
-describe('Component: home', function() {
-    var ctrl;
+describe('home', function() {
+    var ctrl,title;
 
     // Load the module that contains the `home` component before each test
-    beforeEach(module('portfolio'));
+    beforeEach(module('home'));
+
     beforeEach(inject(function($componentController) {
         ctrl = $componentController('home');
     }));

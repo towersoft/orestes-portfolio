@@ -2,6 +2,10 @@
 
 angular.module('portfolio', [
     'ngRoute',
-    'ngResource'
+    'ngResource',
+    'home',
+    'project',
+    'skill',
+    'contact'
 ]);
 
