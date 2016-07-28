@@ -1,7 +1,7 @@
 'use strict';
 
 angular.
-module('portfolio').
+module('services').
 factory('Skill', ['$resource',
     function($resource) {
         return $resource('stub/skill.json', {}, {

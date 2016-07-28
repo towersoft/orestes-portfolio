@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('skill', []);
+angular.module('skill', ['services']);
