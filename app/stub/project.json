@@ -12,7 +12,35 @@
     "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"
   },
   {
-    "name": "Document Requests URLs",
+    "name": "Document Requests",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Fund Transfer",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Investment Portfolio Overview",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Order Status Enquiry",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Order Capture",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Order Details",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Amend Order",
+    "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "name": "Cancel Order",
     "snippet": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
   }
 ]

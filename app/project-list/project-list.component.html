@@ -1,10 +1,17 @@
-<div class="projects">
-   <h2 class="title">{{$ctrl.title}}</h2>
-    <ul>
-        <li ng-repeat="project in $ctrl.projects">
-            <h4>{{project.name}}</h4>
+<div class="projects row">
+    <div class="row col-lg-3 col-lg-offset-9">
+        <input class="form-control" placeholder="Search for..." ng-model="$ctrl.filtered">
 
-            <p class="profile-desc">{{project.snippet}}</p>
-        </li>
-    </ul>
+    </div>
+    <div class="col-lg-12 content">
+        <h2 class="title">{{$ctrl.title}}</h2>
+        <ul>
+            <li ng-repeat="project in $ctrl.projects | filter:$ctrl.filtered">
+                <h4>{{project.name}}</h4>
+
+                <p class="profile-desc">{{project.snippet}}</p>
+            </li>
+        </ul>
+    </div>
+
 </div>
